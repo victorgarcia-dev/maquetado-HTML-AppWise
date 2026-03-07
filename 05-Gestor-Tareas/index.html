@@ -3,9 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Gestor de Tareas</title>
 </head>
 <body>
+    <!--sección principal-->
+    <main>
+       <h1>Mis Tareas Pendientes</h1>
+
+       <section>
+        <!--mini formulario para garagr tareas-->
+            <form action="#">
+                <input type="text" placeholder="¿Qué necesitas hacer hoy?">
+                <button type="submit">Agregar Tarea</button>
+            </form>
+            <ul>
+                <li>
+                    <input type="checkbox"> 
+                    <span>Estudiar etiquetas semanticas</span> 
+                    <button>X</button>
+                </li>
+                <li>
+                    <input type="checkbox" checked> 
+                    <span>Instalar docker en windows</span> 
+                    <button>X</button>
+                </li>
+                <li>
+                    <input type="checkbox"> 
+                    <span>Aprender GitHub</span> 
+                    <button>X</button>
+                </li>  
+            </ul>
+            
+            <!--pie de la lista-->
+            <div>
+                <p>Tienes 2 tareas pendientes.</p>
+                <button>Limpiar Completas</button>
+            </div>
+       </section>
+    </main>
     
 </body>
 </html>
