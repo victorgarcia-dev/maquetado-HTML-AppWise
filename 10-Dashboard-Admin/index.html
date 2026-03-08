@@ -3,9 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Admin Panel - Appwise</title>
 </head>
 <body>
+    <!--barra de navegación-->
+    <aside>
+       <h2>Appwise Admin</h2>
+       <nav>
+            <ul>
+                <li>
+                    <a href="#">Dashboard</a>
+                </li>
+                <li>
+                    <a href="#">Usuarios</a>
+                </li>
+                <li>
+                    <a href="#">Reportes</a>
+                </li>
+                <li>
+                    <a href="#">Configuración</a>
+                </li>
+            </ul>
+       </nav>
+    </aside>
+
+    <!--contenido principal-->
+    <main>
+        <!--cabecera de pagina-->
+        <header>
+            <input type="search" placeholder="Buscar en el panel">
+            <div>
+                <p>Hola, <strong>Admin</strong></p>
+                <img src="./assets/avatar.png" alt="foto-perfil" width="5%" height="5%">
+            </div>
+        </header>
+
+        <!-- sección información general dashboard-->
+        <section>
+            <h2>Resumen General</h2>
+            <article>
+                <h3>Usuarios Activos</h3>
+                <p>
+                    <strong>1.250</strong>
+                </p>
+                <p>+5% esta semana</p>
+            </article>
+             <article>
+                <h3>Ventas del Mes</h3>
+                <p>
+                    <strong>$14.500</strong>
+                </p>
+                <p>+12% esta semana</p>
+            </article>
+             <article>
+                <h3>Tikests Pendientes</h3>
+                <p>
+                    <strong>8</strong>
+                </p>
+                <p>requiere atención</p>
+            </article>
+        </section>
+
+        <!--sección información de las actividades dashboard-->
+        <section>
+            <h2>Actividad Reciente</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Fecha</th>
+                        <th>Usuario</th>
+                        <th>Acción</th>
+                        <th>Estado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>19 Oct, 10:30</td>
+                        <td>Carlos.dev</td>
+                        <td>subio un nuevo proyecto</td>
+                        <td>completado</td>
+                    </tr>
+                    <tr>
+                        <td>19 Oct, 09:00</td>
+                        <td>Ana.ui</td>
+                        <td>Actualizó perfil</td>
+                        <td>completado</td>
+                    </tr>
+                    <tr>
+                        <td>19 Oct, 11:30</td>
+                        <td>Juan.perez</td>
+                        <td>intento de pago</td>
+                        <td>fallido</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <!--form para agregar un nuevo usuario-->
+    <dialog open>
+        <h3>Añadir Nuevo Usuario</h3>
+        <form action="#">
+           <div>
+              <label for="nombreUsuario">Ingrese Nombre</label>
+              <input type="text" id="nombreUsuario">
+           </div>
+           <button type="submit">Guardar</button>
+           <button type="reset">Cancelar</button>
+        </form>
+    </dialog>
     
 </body>
 </html>
